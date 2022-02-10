@@ -21,7 +21,7 @@ const config = {
     sourcemap: 'inline',
     target: `chrome${chrome}`,
     outDir: 'dist',
-    assetsDir: '.',
+    assetsDir: 'assets',
     minify: process.env.MODE !== 'development',
     lib: {
       entry: 'src/index.ts',
