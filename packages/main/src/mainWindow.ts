@@ -11,7 +11,7 @@ async function createWindow() {
   
   trayWindow = new BrowserWindow({
     show: false, // Use 'ready-to-show' event to show window
-    width:250,
+    width:280,
     height:85,
     titleBarStyle:'default',
     roundedCorners: true,
@@ -48,7 +48,7 @@ async function createWindow() {
     const primaryDisplay = screen.getPrimaryDisplay();
     const { width } = primaryDisplay.workAreaSize;
 
-    const x = width - 270;
+    const x = width - 300;
     const y = 40;
   
     trayWindow?.setPosition(x, y, false);
@@ -58,7 +58,7 @@ async function createWindow() {
     trayWindow?.setVisibleOnAllWorkspaces(false);
 
     if (import.meta.env.DEV) {
-      //trayWindow?.webContents.openDevTools({mode: 'detach'});
+      trayWindow?.webContents.openDevTools({mode: 'detach'});
     }
   });
 

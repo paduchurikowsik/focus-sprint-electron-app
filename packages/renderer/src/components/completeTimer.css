@@ -1,0 +1,45 @@
+.completeTimer {
+    min-width: 100%;
+    width: 100%;
+    min-height: 85px;
+    height: 85px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time-wrapper{
+    font-weight: bold;
+}
+
+.time-wrapper .time {
+    font-size: 20px;
+}
+.time-wrapper .dimension{
+    font-size: 12px;
+}
+
+.doneScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    min-width: 100%;
+    width: 100%;
+    min-height: 85px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.doneScreen .text{
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
